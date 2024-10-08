@@ -1,8 +1,9 @@
 local base = require("plugins.configs.lspconfig")
 local on_attach = base.on_attach
 local capabilities = base.capabilities
-
 local lspconfig = require("lspconfig")
+local util = require "lspconfig/util"
+
 
 lspconfig.clangd.setup {
   on_attach = function (client, bufnr)
